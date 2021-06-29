@@ -1,0 +1,264 @@
+.App {
+  font-family: "Helvetica Neue", Arial, Helvetica, Tahoma, sans-serif;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+a {
+  font-family: "Tw Cen MT", "Century Gothic", sans-serif;
+}
+
+/* nav bar CSS */
+.navbar {
+  background-color: #47506b;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  float: left;
+  margin: 5px 0px 0px 10px;
+  text-shadow: 3.5px 3px 5px rgb(24, 24, 24);
+  user-select: none;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: inline-block;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 40px;
+  border-radius: 2px;
+  transition: 0.3s ease all;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  background: #272c3a;
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  background: #272c3a;
+  text-decoration: none;
+  color: white;
+  border: 1.5px solid white;
+}
+
+.login-container {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.login-container button {
+  padding: 7px 8px;
+  width: 75px;
+  border: none;
+  outline: 0;
+  font-family: "Tw Cen MT", "Century Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background: #bac9f0;
+}
+
+.login-container button:hover {
+  background: #272c3a;
+  color: white;
+}
+
+.login-container a:hover {
+  text-decoration: none;
+}
+
+canvas{
+  width:80% !important;
+  height:600px !important;
+  margin: auto;
+  margin-top: 50px;
+}
+
+footer {
+  background: #222;
+  padding: 20px;
+  text-align: left;
+  clear: both;
+  color: #d8d8d8;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-top: 50px;
+ 
+}
+
+.hero {
+  background-color: white;
+  min-height: 500px;
+  margin-top: -34px;
+  margin-bottom: 265px;
+}
+
+.hero h1 {
+  padding: 70px 30px 50px;
+  font-size: 50px;
+  color: black;
+}
+
+.hero a {
+  border: none;
+  text-decoration: none;
+  outline: 0;
+  padding: 12px 30px;
+  font-size: 24px;
+  font-family: "Tw Cen MT", "Century Gothic", sans-serif;
+  transition: ease-in 0.3s;
+  background-color: rgb(206, 206, 212);
+  color: black;
+  display: inline-block;
+}
+
+.hero a:hover {
+  background: #515a72;
+  color: white;
+}
+
+.hero-box {
+  width: 500px;
+  display: inline-block;
+  margin: 0px 20px;
+  flex: 1;
+}
+
+.hero ol {
+  font-size: 17px;
+  color: black;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.hero ol li {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.navbar navbar-expand-md navbar-light bg-light {
+  background-color: pink;
+}
+
+.ag-theme-balham {
+  margin: auto;
+  
+}
+
+.dropdown_searchbar {
+  margin: 10px;
+}
+
+form {
+  width: 500px;
+  background-color: rgb(220, 218, 233);
+  border: black solid 1px;
+  border-radius: 3px;
+  padding: 15px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+input[type=text],[type=password] {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+input[type=search] {
+  margin-left: 5px;
+}
+
+.forms button[type=submit] {
+  width: 50%;
+  background: #272c3a;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Tw Cen MT", "Century Gothic", sans-serif;
+}
+
+select {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 5px;
+}
+
+@media (max-width: 1100px) {
+  .hero-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero h1 {
+    padding: 60px 30px 30px 40px;
+    font-size: 44px;
+  }
+  nav ul li a {
+    padding: 10px 30px;
+  }
+  nav {
+    margin-right: -20px;
+  }
+  .hero-box {
+    width: 300px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  nav ul li a {
+    width: 100%;
+  }
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+  nav {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .login-container {
+    position: relative;
+    top: -10px;
+  }
+  .login-container button {
+    margin-left: 20px;
+  }
+}
